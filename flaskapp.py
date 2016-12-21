@@ -25,7 +25,6 @@ def HelloWorld():
 		output += item.description
 		output += "<br>" 
 		output += "<br>" 
-	print output # To output on the console for  debugging reasons
 	return output
 
 if __name__ == '__main__':
