@@ -20,6 +20,11 @@ def HelloWorld():
 	for item in items :
 		output += item.name #Adding the name of item to the output 
 		output += "<br>"
+		output += "$"
+		output += item.price
+		output += "<br>"
+		output += item.description
+		output += "<br>" 
 
 	print output
 	return output
