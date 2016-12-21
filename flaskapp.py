@@ -20,13 +20,12 @@ def HelloWorld():
 	for item in items :
 		output += item.name #Adding the name of item to the output 
 		output += "<br>"
-		output += "$"
 		output += item.price
 		output += "<br>"
 		output += item.description
 		output += "<br>" 
-
-	print output
+		output += "<br>" 
+	print output # To output on the console for  debugging reasons
 	return output
 
 if __name__ == '__main__':
