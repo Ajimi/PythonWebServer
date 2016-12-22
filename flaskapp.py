@@ -45,7 +45,7 @@ def editMenuItem(restaurant_id, menu_id):
         # SHOULD USE IN YOUR EDITMENUITEM TEMPLATE
         return render_template('editmenuitem.html', restaurant_id=restaurant_id, menu_id=menu_id, item=editedItem)
 
-@app.route('/restaurant/<int:restaurant_id>/<int:menu_id>/delete')
+@app.route('/restaurant/<int:restaurant_id>/<int:menu_id>/delete' ,methods=['GET', 'POST'])
 def deleteMenuItem(restaurant_id, menu_id):
     deleted = session.query(MenuItem).filter_by(id=menu_id).one()
     if request.method == 'POST':
